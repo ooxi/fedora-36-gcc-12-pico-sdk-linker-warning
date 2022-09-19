@@ -1,0 +1,17 @@
+---
+base: fedora:36
+install:
+ # Cross compilation
+ - arm-none-eabi-gcc-cs
+ - arm-none-eabi-gcc-cs-c++
+ - arm-none-eabi-newlib
+
+ # Native compilation
+ - gcc
+ - gcc-c++
+ - libstdc++-devel
+
+ # Build system
+ - cmake
+ - ninja-build
+---
